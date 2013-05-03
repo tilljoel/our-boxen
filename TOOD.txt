@@ -1,0 +1,5 @@
+brew install coreutils
+gem install vim-update-bundles
+tmuxinator
+
+install gem for all ruby
