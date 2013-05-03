@@ -39,7 +39,7 @@ github "googledrive", "1.0.2"
 github "vagrant",     "2.0.6"
 github "vlc",         "1.0.1"
 github "statsd",      "1.0.2"
-github "github_for_mac", "1.0.1" 
+github "github_for_mac", "1.0.1"
 github "ctags",          "1.0.0"
 github "mongodb",        "1.0.0"
 github "dropbox",        "1.1.0"
@@ -65,5 +65,7 @@ github "pkgconfig",      "1.0.0"
 github "swig",           "1.0.0"
 github "pcre",           "1.0.0"
 github "heroku",         "2.0.0"
+github "python",         "1.1.1"
+
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

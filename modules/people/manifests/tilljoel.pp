@@ -4,7 +4,18 @@ class people::tilljoel {
 
   class { 'ruby::global': version => '2.0.0' }
 
-  include zsh 
+#  ['vim-update-bundles', 'pry', 'pry-doc', 'pry-theme', 'pry-editline']:
+  ruby::gem { "bundler for ${version}":
+    gem     => 'bundler',
+    ruby    => $version,
+  }
+
+  ruby::gem { "pry for ${version}":
+    gem     => 'pry',
+    ruby    => $version,
+  }
+  include python
+  include zsh
   include firefox
   include java
   include googledrive
@@ -29,7 +40,7 @@ class people::tilljoel {
   include postgresql
 
   postgresql::db { 'mydb': }
-  
+
   include spotify
   include redis
   include graphviz
