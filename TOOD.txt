@@ -10,3 +10,8 @@ http://downloads.sourceforge.net/project/sourcecodepro.adobe/SourceCodePro_Fonts
 
 brew install https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
 
+fixa vim kompilerad bra
+fixa python genom puppet
+
+youfokuru twitter
+

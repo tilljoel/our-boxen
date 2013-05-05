@@ -14,7 +14,8 @@ class people::tilljoel {
     gem     => 'pry',
     ruby    => $version,
   }
-  include python
+#  include python
+  include vim
   include zsh
   include firefox
   include java
