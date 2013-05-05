@@ -17,7 +17,7 @@ github "boxen", "2.1.0"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
-#github "python",         "1.0.1"
+github "python",         "1.0.1"
 
 github "repository", "2.0.2"
 github "dnsmasq",    "1.0.0"
@@ -32,7 +32,7 @@ github "ruby",       "4.1.0"
 github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 
-github "vim",      "1.0.0"
+github "vim",      "1.0.6", :repo => "davidbanham/puppet-vim"
 github "osx",      "1.1.0"
 github "zsh",      "1.0.0"
 github "firefox",  "1.0.6"
