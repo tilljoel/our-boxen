@@ -201,7 +201,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-vim
   specs:
-    vim (1.0.3)
+    vim (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-vlc
@@ -282,7 +282,7 @@ DEPENDENCIES
   sysctl (= 1.0.0)
   tmux (= 1.0.2)
   vagrant (= 2.0.6)
-  vim (= 1.0.3)
+  vim (= 1.0.0)
   vlc (= 1.0.1)
   wget (= 1.0.0)
   xquartz (= 1.1.0)

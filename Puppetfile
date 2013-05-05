@@ -32,7 +32,7 @@ github "ruby",     "3.1.0"
 github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
 
-github "vim",      "1.0.3"
+github "vim",      "1.0.0"
 github "osx",      "1.1.0"
 github "zsh",      "1.0.0"
 github "firefox",  "1.0.6"
