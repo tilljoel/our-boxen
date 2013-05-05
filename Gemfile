@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
-gem "librarian-puppet", "~> 0.9.9",  :git => 'git://github.com/rodjek/librarian-puppet.git'
-gem "boxen", "~> 1.1"
+gem "boxen", "~> 1.1.2"
 gem "open4", "~> 1.3"
 
 group :development do
