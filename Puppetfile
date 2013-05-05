@@ -17,7 +17,7 @@ github "boxen", "2.1.0"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
-github "python",         "1.0.1"
+github "python",         "1.1.1"
 
 github "repository", "2.0.2"
 github "dnsmasq",    "1.0.0"
@@ -68,6 +68,5 @@ github "swig",           "1.0.0"
 github "pcre",           "1.0.0"
 github "heroku",         "2.0.0"
 
-#github "python",                "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
