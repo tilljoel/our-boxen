@@ -2,7 +2,7 @@ class people::tilljoel {
 
   notify { 'class people::tilljoel declared': }
 
-  class { 'ruby::global': version => '2.0.0' }
+  class { 'ruby::global': version => '1.9.3' }
 
 #  ['vim-update-bundles', 'pry', 'pry-doc', 'pry-theme', 'pry-editline']:
   ruby::gem { "bundler for ${version}":
@@ -46,14 +46,28 @@ class people::tilljoel {
   include redis
   include graphviz
 #  include evernote
-  include heroku
-  heroku::plugin { 'accounts':
-    source => 'ddollar/heroku-accounts'
-  }
+
+  include xpdf
+  include memcached
+  include hipchat
+  include kindle
+
   include sysctl
   include pkgconfig
   include swig
   include pcre
+  include heroku
+  heroku::plugin { 'accounts':
+    source => 'ddollar/heroku-accounts'
+  }
+  include keyremap4macbook
+  include hub
+  include flux
+  include clipmenu
+  include twitterrific
+  include ctags
+  include slate
+
   #osx::recovery_message { 'If this Mac is found, please call Joel, 0709-886607': }
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access

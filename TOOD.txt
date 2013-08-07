@@ -9,3 +9,5 @@ get font http://downloads.sourceforge.net/project/sourcecodepro.adobe/SourceCode
 brew install https://raw.github.com/Homebrew/homebrew-dupes/master/grep.rb
 lib lxml using pip
 youfokuru twitter
+brew install cmake, for youcompleteme
+edit vim brew recipt, add ruby/python interpret.
