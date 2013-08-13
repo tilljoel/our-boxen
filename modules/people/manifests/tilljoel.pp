@@ -67,6 +67,7 @@ class people::tilljoel {
   include twitterrific
   include ctags
   include slate
+  include colloquy
 
   #osx::recovery_message { 'If this Mac is found, please call Joel, 0709-886607': }
   include osx::global::disable_key_press_and_hold

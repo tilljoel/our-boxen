@@ -9,6 +9,11 @@ GITHUBTARBALL
     boxen (2.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-clipmenu
+  specs:
+    clipmenu (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-ctags
   specs:
     ctags (1.0.0)
@@ -32,6 +37,11 @@ GITHUBTARBALL
   remote: boxen/puppet-fluid
   specs:
     fluid (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-flux
+  specs:
+    flux (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -76,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hipchat
   specs:
-    hipchat (1.0.2)
+    hipchat (1.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
@@ -102,6 +112,21 @@ GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
     java (1.1.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-keyremap4macbook
+  specs:
+    keyremap4macbook (1.0.3)
+
+GITHUBTARBALL
+  remote: boxen/puppet-kindle
+  specs:
+    kindle (1.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-memcached
+  specs:
+    memcached (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-mongodb
@@ -169,6 +194,11 @@ GITHUBTARBALL
     skype (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-slate
+  specs:
+    slate (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-spotify
   specs:
     spotify (1.0.0)
@@ -199,6 +229,11 @@ GITHUBTARBALL
     tmux (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-twitterrific
+  specs:
+    twitterrific (0.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (2.0.6)
@@ -212,6 +247,11 @@ GITHUBTARBALL
   remote: boxen/puppet-wget
   specs:
     wget (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-xpdf
+  specs:
+    xpdf (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -246,12 +286,15 @@ GITHUBTARBALL
 DEPENDENCIES
   alfred (= 1.0.2)
   boxen (= 2.1.0)
+  clipmenu (= 1.0.0)
+  ctags (= 1.0.0)
   ctags (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.1.0)
   evernote (= 1.0.1)
   firefox (= 1.0.6)
   fluid (= 1.0.0)
+  flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.2.2)
   github_for_mac (= 1.0.1)
@@ -260,13 +303,17 @@ DEPENDENCIES
   googleearth (= 1.0.0)
   graphviz (= 1.0.0)
   heroku (= 2.0.0)
-  hipchat (= 1.0.2)
+  hipchat (= 1.0.7)
   homebrew (= 1.1.2)
+  hub (= 1.0.0)
   hub (= 1.0.0)
   imagemagick (= 1.2.0)
   inifile (= 0.9.0)
   iterm2 (= 1.0.2)
   java (= 1.1.0)
+  keyremap4macbook (= 1.0.3)
+  kindle (= 1.0.1)
+  memcached (= 1.0.0)
   mongodb (= 1.0.0)
   nginx (= 1.4.0)
   nodejs (= 2.1.0)
@@ -280,6 +327,7 @@ DEPENDENCIES
   ruby (= 4.1.0)
   skitch (= 1.0.0)
   skype (= 1.0.2)
+  slate (= 1.0.0)
   spotify (= 1.0.0)
   statsd (= 1.0.2)
   stdlib (= 4.0.2)
@@ -287,10 +335,12 @@ DEPENDENCIES
   swig (= 1.0.0)
   sysctl (= 1.0.0)
   tmux (= 1.0.2)
+  twitterrific (= 0.0.1)
   vagrant (= 2.0.6)
   vim (= 1.0.6)
   vlc (= 1.0.1)
   wget (= 1.0.0)
+  xpdf (= 1.0.0)
   xquartz (= 1.1.0)
   zsh (= 1.0.0)
 
