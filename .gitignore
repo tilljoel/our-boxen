@@ -10,3 +10,5 @@
 !/shared/README.md
 /vendor/puppet/
 /vendor/gems/
+.bs
+.ci-status

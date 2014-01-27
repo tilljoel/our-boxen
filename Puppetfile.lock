@@ -14,6 +14,11 @@ GITHUBTARBALL
     clipmenu (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-colloquy
+  specs:
+    colloquy (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-ctags
   specs:
     ctags (1.0.0)
@@ -269,11 +274,6 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
-  remote: davidbanham/puppet-vim
-  specs:
-    vim (1.0.6)
-
-GITHUBTARBALL
   remote: jasonamyers/puppet-evernote
   specs:
     evernote (1.0.1)
@@ -287,6 +287,7 @@ DEPENDENCIES
   alfred (= 1.0.2)
   boxen (= 2.1.0)
   clipmenu (= 1.0.0)
+  colloquy (= 1.0.0)
   ctags (= 1.0.0)
   ctags (= 1.0.0)
   dnsmasq (= 1.0.0)
@@ -337,7 +338,6 @@ DEPENDENCIES
   tmux (= 1.0.2)
   twitterrific (= 0.0.1)
   vagrant (= 2.0.6)
-  vim (= 1.0.6)
   vlc (= 1.0.1)
   wget (= 1.0.0)
   xpdf (= 1.0.0)
