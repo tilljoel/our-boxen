@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.3.8"
+github "boxen", "3.3.4"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -55,9 +55,9 @@ github "sudo",       "1.0.0"
 github "xquartz",    "1.1.0"
 
 #github "vim",      "1.0.6", :repo => "davidbanham/puppet-vim"
-github "osx",      "2.2.2"
-github "zsh",      "1.0.0"
-github "firefox",  "1.0.7"
+github "osx",        "2.2.2"
+github "zsh",        "1.0.0"
+github "firefox",    "1.1.7"
 github "java",        "1.2.0"
 github "googledrive", "1.0.2"
 github "vagrant",     "3.0.4"
