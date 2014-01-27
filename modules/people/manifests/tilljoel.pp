@@ -32,7 +32,7 @@ class people::tilljoel {
   include skype
   include imagemagick
   include gitx::dev
-  include skitch
+ # include skitch
   include hipchat
   include iterm2::stable
   include alfred
@@ -63,7 +63,7 @@ class people::tilljoel {
   include keyremap4macbook
   include hub
   include flux
-  include clipmenu
+# include clipmenu
   include twitterrific
   include ctags
   include slate

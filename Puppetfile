@@ -4,78 +4,98 @@
 # default. This ensures at least the ability to construct a basic
 # environment.
 
-def github(name, version, options = nil)
-  options ||= {}
-  options[:repo] ||= "boxen/puppet-#{name}"
-  mod name, version, :github_tarball => options[:repo]
+# Shortcut for a module from GitHub's boxen organization
+def github(name, *args)
+  options ||= if args.last.is_a? Hash
+    args.last
+  else
+    {}
+  end
+
+  if path = options.delete(:path)
+    mod name, :path => path
+  else
+    version = args.first
+    options[:repo] ||= "boxen/puppet-#{name}"
+    mod name, version, :github_tarball => options[:repo]
+  end
+end
+
+# Shortcut for a module under development
+def dev(name, *args)
+  mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "2.1.0"
+github "boxen", "3.3.8"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
-github "python",         "1.1.1"
 
-github "repository", "2.0.2"
-github "dnsmasq",    "1.0.0"
-github "gcc",        "1.0.0"
-github "git",        "1.2.2"
-github "homebrew",   "1.1.2"
-github "hub",        "1.0.0"
-github "inifile",    "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
-github "nginx",      "1.4.0"
-github "nodejs",     "2.1.0"
-github "ruby",       "4.1.0"
-github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
+github "python",     "1.1.1"
+github "dnsmasq",    "1.0.1"
+github "foreman",    "1.0.0"
+github "gcc",        "2.0.1"
+github "git",        "1.2.5"
+github "go",         "1.0.0"
+github "homebrew",   "1.5.1"
+github "hub",        "1.0.3"
+github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
+github "nginx",      "1.4.2"
+github "nodejs",     "3.3.0"
+github "openssl",    "1.0.0"
+github "phantomjs",  "2.0.2"
+github "pkgconfig",  "1.0.0"
+github "repository", "2.2.0"
+github "ruby",       "6.7.2"
+github "stdlib",     "4.1.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
+github "xquartz",    "1.1.0"
 
 #github "vim",      "1.0.6", :repo => "davidbanham/puppet-vim"
-github "osx",      "1.1.0"
+github "osx",      "2.2.2"
 github "zsh",      "1.0.0"
-github "firefox",  "1.0.6"
-github "java",        "1.1.0"
+github "firefox",  "1.0.7"
+github "java",        "1.2.0"
 github "googledrive", "1.0.2"
-github "vagrant",     "2.0.6"
-github "vlc",         "1.0.1"
-github "statsd",      "1.0.2"
+github "vagrant",     "3.0.4"
+github "vlc",         "1.0.5"
+github "statsd",      "1.0.3"
 github "github_for_mac", "1.0.1"
 github "ctags",          "1.0.0"
-github "mongodb",        "1.0.0"
-github "dropbox",        "1.1.0"
+github "mongodb",        "1.2.0"
+github "dropbox",        "1.2.0"
 github "tmux",           "1.0.2"
 github "googleearth",    "1.0.0"
-github "skype",          "1.0.2"
-github "imagemagick",    "1.2.0"
+github "skype",          "1.0.8"
+github "imagemagick",    "1.2.1"
 github "gitx",           "1.2.0"
-github "skitch",         "1.0.0"
-github "iterm2",         "1.0.2"
-github "alfred",         "1.0.2"
+github "iterm2",         "1.0.6"
+github "alfred",         "1.1.7"
+
 github "fluid",          "1.0.0"
 github "wget",           "1.0.0"
-github "postgresql",     "1.0.0"
-github "spotify",        "1.0.0"
-github "redis",          "1.0.0"
-github "xquartz",        "1.1.0"
+github "postgresql",     "3.0.1"
+github "spotify",        "1.0.1"
+github "redis",          "2.1.0"
+github "xquartz",        "1.1.1"
 github "graphviz",       "1.0.0"
-github "evernote",       "1.0.1", :repo => "jasonamyers/puppet-evernote"
+github "evernote",       "2.0.5", :repo => "jasonamyers/puppet-evernote"
 github "sysctl",         "1.0.0"
 github "pkgconfig",      "1.0.0"
 github "swig",           "1.0.0"
 github "pcre",           "1.0.0"
-github "heroku",         "2.0.0"
-github "keyremap4macbook", "1.0.3"
-github "hub",            "1.0.0"
+github "heroku",         "2.1.1"
+github "keyremap4macbook", "1.2.1"
+github "hub",            "1.3.0"
 github "flux",           "0.0.1"
-github "clipmenu",       "1.0.0"
 github "twitterrific",   "0.0.1"
-github "ctags",          "1.0.0"
 github "slate",          "1.0.0"
 github "xpdf",           "1.0.0"
 github "memcached",      "1.0.0"
-github "hipchat",        "1.0.7"
+github "hipchat",        "1.1.0"
 github "kindle",         "1.0.1"
 github "colloquy",       "1.0.0"
 
